@@ -1,8 +1,12 @@
+.Container
+{
+margin: 5%;
+}
 body 
 {
     position: relative;
     padding-bottom: 8em;
-}
+} 
 
 footer{
 
@@ -13,8 +17,4 @@ footer{
     bottom: 0;
     width: 100%;
 
-}
-img{
-    height: 300px;
-    
 }
