@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roger Orellana</title>
     <link rel="stylesheet" href="Admin.css">
+    <script src="alerts.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body style="background-color: #F9F4E8;">
@@ -37,93 +39,94 @@
   
     <div class="album py-5">
       <div class="container">
-        <div class="card mb-3 shadow-sm" style="width: 40rem;">
+        <div class="card mb-3 shadow-sm" style="width: 40rem;" id="Producto1">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="Images/Zapote.jpeg" class="img-fluid rounded-start" alt="..." style="height: 9rem;">
+              <img src="Images/Zapote.jpeg" class="img-fluid rounded-start" alt="..." style="height: 9rem;" id="ImagenP1">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Zapote</h5>
-                <a href="#" class="btn btn-success">Editar</a>
-                <a href="#" class="btn btn-success">Remover</a>
+                <h5 class="card-title" id="TextoP1">Zapote</h5>
+                <button class="btn btn-success" onclick="editBttn('TextoP1', 'ImagenP1')">Editar</button>
+                <button class="btn btn-success" onclick="removeBttn('Producto1')">Remover</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="card mb-3 shadow-sm" style="width: 40rem;">
+        <div class="card mb-3 shadow-sm" style="width: 40rem;" id="Producto2">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="Images/Caoba.jpg" class="img-fluid rounded-start" alt="..." style="height: 9rem;">
+              <img src="Images/Caoba.jpg" class="img-fluid rounded-start" alt="..." style="height: 9rem;" id="ImagenP2">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Caoba</h5>
-                <a href="#" class="btn btn-success">Editar</a>
-                <a href="#" class="btn btn-success">Remover</a>
+                <h5 class="card-title" id="TextoP2">Caoba</h5>
+                <button class="btn btn-success" onclick="editBttn('TextoP2', 'ImagenP2')">Editar</button>
+                <button class="btn btn-success" onclick="removeBttn('Producto2')">Remover</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="card mb-3 shadow-sm" style="width: 40rem;">
+        <div class="card mb-3 shadow-sm" style="width: 40rem;" id="Producto3">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="Images/Cedro.jpg" class="img-fluid rounded-start" alt="..." style="height: 9rem;">
+              <img src="Images/Cedro.jpg" class="img-fluid rounded-start" alt="..." style="height: 9rem;" id="ImagenP3">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Cedro</h5>
-                <a href="#" class="btn btn-success">Editar</a>
-                <a href="#" class="btn btn-success">Remover</a>
+                <h5 class="card-title" id="TextoP3">Cedro</h5>
+                <button class="btn btn-success" onclick="editBttn('TextoP3', 'ImagenP3')">Editar</button>
+                <button class="btn btn-success" onclick="removeBttn('Producto3')">Remover</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="card mb-3 shadow-sm" style="width: 40rem;">
+        <div class="card mb-3 shadow-sm" style="width: 40rem;" id="Producto4">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="Images/Guarumo.jpg" class="img-fluid rounded-start" alt="..." style="height: 9rem;">
+              <img src="Images/Guarumo.jpg" class="img-fluid rounded-start" alt="..." style="height: 9rem;" id="ImagenP4">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Guarumo</h5>
-                <a href="#" class="btn btn-success">Editar</a>
-                <a href="#" class="btn btn-success">Remover</a>
+                <h5 class="card-title" id="TextoP4">Guarumo</h5>
+                <button class="btn btn-success" onclick="editBttn('TextoP4', 'ImagenP4')">Editar</button>
+                <button class="btn btn-success" onclick="removeBttn('Producto4')">Remover</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="card mb-3 shadow-sm" style="width: 40rem;">
+        <div class="card mb-3 shadow-sm" style="width: 40rem;" id="Producto5">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="Images/Chiit.jpg" class="img-fluid rounded-start" alt="..." style="height: 9rem;">
+              <img src="Images/Chiit.jpg" class="img-fluid rounded-start" alt="..." style="height: 9rem;" id="ImagenP5">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Chiit</h5>
-                <a href="#" class="btn btn-success">Editar</a>
-                <a href="#" class="btn btn-success">Remover</a>
+                <h5 class="card-title" id="TextoP5">Chiit</h5>
+                <button class="btn btn-success" onclick="editBttn('TextoP5', 'ImagenP5')">Editar</button>
+                <button class="btn btn-success" onclick="removeBttn('Producto5')">Remover</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="card mb-3 shadow-sm" style="width: 40rem;">
+        <div class="card mb-3 shadow-sm" style="width: 40rem;" id="Producto6">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="Images/Despeinada.jpg" class="img-fluid rounded-start" alt="..." style="height: 9rem;">
+              <img src="Images/Despeinada.jpg" class="img-fluid rounded-start" alt="..." style="height: 9rem;" id="ImagenP6">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Despeinada</h5>
-                <a href="#" class="btn btn-success">Editar</a>
-                <a href="#" class="btn btn-success">Remover</a>
+                <h5 class="card-title" id="TextoP6">Despeinada</h5>
+                <button class="btn btn-success" onclick="editBttn('TextoP6', 'ImagenP6')">Editar</button>
+                <button class="btn btn-success" onclick="removeBttn('Producto6')">Remover</button>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-success">Agregar nueva entrada</button>
+        <button type="button" class="btn btn-success" style="height: 3rem;">Agregar nueva entrada</button>
       </div>
     </div>
+
   </main>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="facebook" viewbox="0 0 16 16" style="fill: white">
